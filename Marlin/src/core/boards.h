@@ -418,6 +418,7 @@
 // Custom board
 //
 
+#define BOARD_MAKERPI_v208             9997  // MakerPi v2.0.8
 #define BOARD_CUSTOM                  9998  // Custom pins definition for development and/or rare boards
 
 //
