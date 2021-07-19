@@ -23,6 +23,8 @@
 // Custom MakerPi 2.0.8 board pins.
 #pragma once
 
+#include "../mega/env_validate.h"
+
 #define BOARD_INFO_NAME "MakerPi 2.0.8"
 
 // Limit Switches

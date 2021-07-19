@@ -671,6 +671,12 @@
   #include "samd/pins_RAMPS_144.h"              // SAMD51                                 env:SAMD51_grandcentral_m4
 
 //
+// MakerPi v2.0.8
+//
+#elif MB(MAKERPI_v208)
+  #include "makerpi/pins_MAKERPI_v208.h"        // MakerPi v2.0.8
+
+//
 // Custom board (with custom PIO env)
 //
 
