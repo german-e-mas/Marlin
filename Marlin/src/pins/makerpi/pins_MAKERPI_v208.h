@@ -72,13 +72,13 @@
 
 // Temperature Sensors
 #ifndef TEMP_0_PIN
-  #define TEMP_0_PIN 62 // Analog Input
+  #define TEMP_0_PIN 8 // Analog Input
 #endif
 #ifndef TEMP_1_PIN
-  #define TEMP_1_PIN 63 // Analog Input
+  #define TEMP_1_PIN 9 // Analog Input
 #endif
 #ifndef TEMP_BED_PIN
-  #define TEMP_BED_PIN 64 // Analog Input
+  #define TEMP_BED_PIN 10 // Analog Input
 #endif
 
 // Heaters / Fans
