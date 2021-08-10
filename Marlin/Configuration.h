@@ -522,9 +522,20 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  22.20
-    #define DEFAULT_Ki   1.08
-    #define DEFAULT_Kd 114.00
+    // Default values
+    // #define DEFAULT_Kp  22.20
+    // #define DEFAULT_Ki   1.08
+    // #define DEFAULT_Kd 114.00
+
+    // From Autotune
+    // #define DEFAULT_Kp 12.63
+    // #define DEFAULT_Ki 0.60
+    // #define DEFAULT_Kd 65.97
+
+    // Zeigler-Nichols No Overshoot
+    #define DEFAULT_Kp 4.21   // KP/3
+    #define DEFAULT_Ki 0.60   // KI
+    #define DEFAULT_Kd 175.92 // KD * 8/3
   #endif
 #endif // PIDTEMP
 
@@ -1202,7 +1213,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -1733,7 +1744,7 @@
  *    P1  Raise the nozzle always to Z-park height.
  *    P2  Raise the nozzle by Z-park amount, limited to Z_MAX_POS.
  */
-//#define NOZZLE_PARK_FEATURE
+#define NOZZLE_PARK_FEATURE
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z_raise }
