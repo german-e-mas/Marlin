@@ -527,15 +527,15 @@
     // #define DEFAULT_Ki   1.08
     // #define DEFAULT_Kd 114.00
 
-    // From Autotune
-    // #define DEFAULT_Kp 12.63
-    // #define DEFAULT_Ki 0.60
-    // #define DEFAULT_Kd 65.97
+    // From Autotune (M303 E0 C8 S210)
+    // #define DEFAULT_Kp  9.83
+    // #define DEFAULT_Ki  0.40
+    // #define DEFAULT_Kd 61.03
 
-    // Zeigler-Nichols No Overshoot
-    #define DEFAULT_Kp 4.21   // KP/3
-    #define DEFAULT_Ki 0.60   // KI
-    #define DEFAULT_Kd 175.92 // KD * 8/3
+    // Original config (Marlin 1.0.0)
+    #define DEFAULT_Kp 10.00
+    #define DEFAULT_Ki  0.50
+    #define DEFAULT_Kd 50.00
   #endif
 #endif // PIDTEMP
 
