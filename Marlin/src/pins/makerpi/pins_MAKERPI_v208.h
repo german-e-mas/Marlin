@@ -90,8 +90,9 @@
 #define HEATER_1_PIN 3
 #define HEATER_BED_PIN 4
 
-#define FAN1_PIN 7
-#define FAN_PIN 44
+// #define FAN_PIN   7 // PWM pin - Unused
+#define FAN_PIN  44 // Fan pin - Layer fan
+#define FAN1_PIN 32 // Board fan - Has the hot-end fan wired as well.
 
 // LCD + SD module.
 #ifndef EXP1_01_PIN
